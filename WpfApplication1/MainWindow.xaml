@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Калькулятор от Баранова Никиты" Height="430" Width="430">
+    <Grid Width="400" Height="500">
+        <TextBox x:Name="TextBox_Main" HorizontalAlignment="Left" Height="80" Margin="25,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="358" Text="0" TextInput="TextBox_Main_TextInput" KeyDown="TextBox_Main_KeyDown" BorderThickness="1,0,1,1" FontSize="24" FontWeight="Bold" TextChanged="TextBox_Main_TextChanged" ForceCursor="True" TextAlignment="Right" IsEnabled="False"/>
+        <TextBox x:Name="TextBox_Add" HorizontalAlignment="Left" Height="20" Margin="25,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="358" IsEnabled="False" TextAlignment="Right" BorderThickness="1,1,1,0"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="169,286,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Number"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="241,286,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Number"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="97,244,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Number"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="169,244,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Number"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="241,244,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Number"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="97,202,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Number" BorderThickness="1"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="169,202,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Number"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="241,202,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Number"/>
+        <Button Content="C" HorizontalAlignment="Left" Margin="169,160,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Delete_All" BorderThickness="1"/>
+        <Button Content="←" HorizontalAlignment="Left" Margin="241,160,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Delete_Once" BorderThickness="1"/>
+        <Button Content="1/x" HorizontalAlignment="Left" Margin="25,328,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="ButtonSpecialAr" BorderThickness="1"/>
+        <Button x:Name="andu" Content="*" HorizontalAlignment="Left" Margin="313,202,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Click_Ar"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="313,160,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Click_Ar"/>
+        <Button Content="√" HorizontalAlignment="Left" Margin="25,202,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="ButtonSpecialAr" BorderThickness="1"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="169,328,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Number"/>
+        <Button Content="," HorizontalAlignment="Left" Margin="241,328,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Point"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="313,328,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Click_Res"/>
+        <Button Content="%" HorizontalAlignment="Left" Margin="25,160,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="ButtonSpecialAr" BorderThickness="1"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="313,286,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Click_Ar"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="313,244,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Click_Ar"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="97,286,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Number"/>
+        <Button Content="±" HorizontalAlignment="Left" Margin="97,328,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Neg_Or_Pos_Click"/>
+        <Button x:Name="button" Content="CE" HorizontalAlignment="Left" Margin="97,160,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="Button_Delete_Add" BorderThickness="1"/>
+        <Button x:Name="button1" Content="x^2" HorizontalAlignment="Left" Margin="25,244,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="ButtonSpecialAr" BorderThickness="1"/>
+        <Button x:Name="button2" Content="x^3" HorizontalAlignment="Left" Margin="25,286,0,0" VerticalAlignment="Top" Width="70" Height="40" Click="ButtonSpecialAr" BorderThickness="1"/>
+        <Label x:Name="label_M" Content="" HorizontalAlignment="Left" Margin="25,95,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <Button x:Name="Button_MC" Content="MC" HorizontalAlignment="Left" Margin="97,124,0,0" VerticalAlignment="Top" Width="70" Height="30" Click="Button_MC_Click" BorderThickness="0"/>
+        <Button x:Name="Button_M_Plus" Content="M+" HorizontalAlignment="Left" Margin="169,124,0,0" VerticalAlignment="Top" Width="70" Height="30" Click="Button_M_Plus_Click" BorderThickness="0"/>
+        <Button x:Name="Button_MR" Content="MR" HorizontalAlignment="Left" Margin="25,124,0,0" VerticalAlignment="Top" Width="70" Height="30" Click="Button_MR_Click" BorderThickness="0"/>
+        <Button x:Name="Button_M_Minus" Content="M-" HorizontalAlignment="Left" Margin="241,124,0,0" VerticalAlignment="Top" Width="70" Height="30" Click="Button_M_Minus_Click" BorderThickness="0"/>
+        <Button x:Name="Button_MS" Content="MS" HorizontalAlignment="Left" Margin="313,124,0,0" VerticalAlignment="Top" Width="70" Height="30" Click="Button_MS_Click" BorderThickness="0"/>
+
+    </Grid>
+</Window>
